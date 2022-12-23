@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>Epic Adventure</title>
+  </head>
+    <body>
+<div>
+      <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      font-family: Tahoma;
+      }
+
+    a{
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    #scene {
+      background: url("maphtml.png") no-repeat;
+      height: 550px;
+      width: 771px;
+
+      position: absolute;
+      top: 20px;
+      left: 20px
+    }
+
+    #situation {
+
+      position: absolute;
+      top: 460px;
+      left: 20px;
+      padding: 15px 15px 15px 15px;
+
+      background-color: rgba(0,0,0,.5);
+      width: 640px;
+      text-align: center;
+    }
+    #favicon {
+      position: absolute;
+        top: 90px;
+        left: 40px;
+    }
+    #map {
+      position: absolute;
+      top: -20px;
+    }
+    #return {
+
+      color: white;
+
+      position: absolute;
+      top: 535px;
+      left: 2px;
+    }
+    #start {
+
+      color: black;
+
+      position: absolute;
+      top: 120px;
+      left: 80px;
+
+    }
+    #castle {
+
+      color: black;
+
+      position: absolute;
+      top: 140px;
+      left: 20px;
+    }
+    #run {
+
+      color: black;
+
+      position: absolute;
+      top: 160px;
+      left: 10px;
+    }
+    #Mountian {
+      position: absolute;
+      top: 140px;
+      left: 120px;
+
+    }
+    #hidden {
+      color:#925a3d;
+      text-decoration: none;
+
+      position: absolute;
+      top:440;
+      left:580;
+
+    }
+    #hidden:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    </style>
+</div>
+    <div>
+      <style>
+        #key {
+          position: absolute;
+          top: 0px;
+          left: 200px;
+        }
+        #key1 {
+          position: absolute;
+          top: 40px;
+          left: 200px;
+        }
+        #key2 {
+          position: absolute;
+          top: 60px;
+          left: 200px;
+        }
+      </style>
+    </div>
+    <div id=scene>
+      <div>
+        <img id=favicon src="favicon.ico">
+        <p id=key style="font-size:30px"><font color=white>KEY</p>
+        <p id=key1><font color=white>Done</p>
+        <p id=key2><font color=red>Not done</p>
+      </div>
+      <p id=start><a href="chose_start.html"><font color="white">START</a></p>
+      <p id=castle><a href="Chose_castle.html"><font color="white">CASTLE</a></p>
+      <p id=mountian><a href=".html"><font color="red">MOUNTIAN</a></p>
+      <p id=run><a href="Chose_run.html"><font color="white">RUN</a></p>
+      <a id=hidden href="castle_rk_roll.html">Hidden level</a>
+        <p id=situation><font color="white">CLICK a scene to go there.</p>
+        <p id=return><a onclick="history.back()">Exit map</a></p>
+    </div>
+  </body>

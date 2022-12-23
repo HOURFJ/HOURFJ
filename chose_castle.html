@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Epic Adventure</title>
+  </head>
+    <body>
+
+      <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      font-family: Tahoma;
+      }
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #scene {
+      background: url("Chose_castle.png") no-repeat;
+      height: 550px;
+      width: 711px;
+
+      position: absolute;
+      top: 20px;
+      left: 20px
+    }
+
+    #situation {
+
+      position: absolute;
+      top: 310px;
+      left: 30px;
+      padding: 15px 15px 15px 15px;
+
+      background-color: rgba(0,0,0,.5);
+      width: 640px;
+      text-align: center;
+    }
+
+    #run {
+
+      opacity: 0;
+      height: 200;
+      width: 200;
+
+      position: absolute;
+      top: 90px;
+      left: 50px;
+    }
+
+    #run:hover{
+      background-color: rgba(256, 256, 256, 0.5);
+      opacity: 100;
+    }
+
+    #fight{
+
+      position: absolute;
+      left: 490px;
+      top: 160px;
+
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+
+    #fight:hover{
+      background-color: rgba(256,256,256,0.5);
+      opacity: 100;
+    }
+    #map {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+}
+    #map:hover{
+
+      position: absolute;
+      top: 20px;
+      left: 40px;
+    }
+
+    #return {
+
+      position: absolute;
+      top: 405px;
+      left: 20px;
+    }
+    </style>
+
+
+    <div id=scene>
+
+      <a href="Chose_fight.html"id=fight>
+        <img src="fight.png">
+      </a>
+      <a href="Chose_run.html"id=run>
+        <img src="Run.png">
+      </a>
+        <p id=situation>You are attacked by a troll, will you <a href="Chose_run.html">RUN</a> or <a href="Chose_fight.html">FIGHT</a>?</p>
+    </div>
+    <p id=return><a href="index.html">Restart</a></p>
+    <p id=Map><a href="map.html"><img src="map.png"hight=52 width=64 ></a></p>
+  </body>

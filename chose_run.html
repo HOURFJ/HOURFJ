@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Epic Adventure</title>
+  </head>
+    <body>
+
+      <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      font-family: Tahoma;
+      }
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #scene {
+      background: url("chose_run.png") no-repeat;
+      height: 550px;
+      width: 711px;
+
+      position: absolute;
+      top: 20px;
+      left: 20px
+    }
+
+    #situation {
+
+      position: absolute;
+      top: 310px;
+      left: 30px;
+      padding: 15px 15px 15px 15px;
+
+      background-color: rgba(0,0,0,.5);
+      width: 640px;
+      text-align: center;
+    }
+
+    #mount {
+
+      height: 300;
+      width: 250;
+
+      position: absolute;
+      top: 90px;
+      left: 20px;
+    }
+
+    #mount:hover{
+      background-color: rgba(256, 256, 256, 0.5);
+    }
+
+    #Castle{
+
+      position: absolute;
+      left: 490px;
+      top: 160px;
+
+      width: 200px;
+      height: 150px;
+    }
+
+    #Castle:hover{
+      background-color: rgba(256,256,256,0.5);
+    }
+
+    #return {
+
+      position: absolute;
+      top: 385px;
+      left: 2px;
+    }
+    #map {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+}
+    #map:hover{
+
+      position: absolute;
+      top: 0px;
+      left: 20px;
+    }
+    </style>
+
+
+    <div id=scene>
+
+      <a href="Chose_mountain.html"id=mount> </a>
+        <p id=situation>Will you go to the <a href="Chose_mountain.html">MOUNTIAN</a> or the <a href="castle_rk_roll.html">CASTLE</a>?</p>
+
+        <p id=return><a href="index.html">Restart</a>
+        <p id=Map><a href="map.html"><img src="map.png"hight=52 width=64 ></a></p>
+
+    </div>
+  </body>
